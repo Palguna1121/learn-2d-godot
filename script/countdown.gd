@@ -1,11 +1,11 @@
 extends Label
 @onready var timer: Timer = $Timer
 
-var count: int = 35
+var count: int = 60
 
 func textCount() -> void:
 	text = str(count)
-# Called when the node enters the scene tree for the first time.
+
 func _ready() -> void:
 	textCount()
 	timer.start()
@@ -18,9 +18,5 @@ func _on_timer_timeout() -> void:
 		textCount()
 	else:
 		timer.stop()
-		get_tree().reload_current_scene()
+		Controller.dead()
 		
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	pass
