@@ -11,6 +11,7 @@ config_version=5
 [application]
 
 config/name="learn-game-2d"
+config/description="AIzaSyC-uREdYGU7tP0bzraahOr2MI5ZrpTe1DI"
 run/main_scene="res://scene/2d_run.tscn"
 config/features=PackedStringArray("4.3", "GL Compatibility")
 config/icon="res://icon.svg"
@@ -18,6 +19,15 @@ config/icon="res://icon.svg"
 [autoload]
 
 Controller="*res://script/controller.gd"
+
+[editor]
+
+version_control/plugin_name="GitPlugin"
+version_control/autoload_on_startup=true
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/GodotGemini/plugin.cfg")
 
 [input]
 

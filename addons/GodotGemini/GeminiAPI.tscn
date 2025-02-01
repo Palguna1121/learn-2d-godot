@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://addons/GodotGemini/GeminiAPI.gd" id="1_gemini"]
+
+[node name="GeminiAPI" type="HTTPRequest"]
+script = ExtResource("1_gemini")
