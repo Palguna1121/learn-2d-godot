@@ -3,7 +3,7 @@ class_name GeminiAPI
 extends HTTPRequest
 
 # Remove the signal declaration since HTTPRequest already has request_completed
-var gemini_api_key = ProjectSettings.get_setting("application/config/description", "")
+var gemini_api_key = ProjectSettings.get_setting("application/config/project_settings_override", "")
 var model_name = "gemini-2.0-flash-thinking-exp"
 
 func _ready():

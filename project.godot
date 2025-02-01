@@ -11,8 +11,9 @@ config_version=5
 [application]
 
 config/name="learn-game-2d"
-config/description="AIzaSyC-uREdYGU7tP0bzraahOr2MI5ZrpTe1DI"
 run/main_scene="res://scene/2d_run.tscn"
+config/use_custom_user_dir=true
+config/project_settings_override="AIzaSyC-uREdYGU7tP0bzraahOr2MI5ZrpTe1DI"
 config/features=PackedStringArray("4.3", "GL Compatibility")
 config/icon="res://icon.svg"
 
